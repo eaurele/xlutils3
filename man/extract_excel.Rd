@@ -2,16 +2,16 @@
 % Please edit documentation in R/extract_excel.R
 \name{extract_excel}
 \alias{extract_excel}
-\title{A function that extracts all xls[x] files in a folder}
+\title{A function that extracts all \code{.xls[x]} files in a folder}
 \usage{
 extract_excel(folder, general_case = NULL, weird_cases = NULL)
 }
 \arguments{
 \item{folder}{Path to folder}
 
-\item{general_case}{Args to be passed to `readxl::read_excel` for all sheets of all workbooks. Defaults to NULL.}
+\item{general_case}{Args to be passed to \code{readxl::read_excel} for all sheets of all workbooks. Defaults to NULL.}
 
-\item{weird_cases}{Args to be passed to `readxl::read_excel` for specific sheets. Overwrites general_case. Defaults to NULL. See `Details`.}
+\item{weird_cases}{Args to be passed to \code{readxl::read_excel} for specific sheets. Overwrites general_case. Defaults to NULL. See \strong{Details}.}
 }
 \value{
 data A list of workbooks, each is a list of sheets as dataframes
@@ -21,11 +21,11 @@ Store all data in one list of lists (ie one list of workbooks, each
 workbook is a list of sheets, each sheet is a dataframe (or an error message if applicable))
 }
 \details{
-`general_case` is one flat list of args (lines to skip and the like) to be passed to `readxl::read_excel` for all sheets.
-    `weird_cases` is a nested list of such args for known specific cases.
+\code{general_case} is one flat list of args (lines to skip and the like) to be passed to \code{readxl::read_excel} for all sheets.
+    \code{weird_cases} is a nested list of such args for known specific cases.
     It is recommended you try to read the data without these argument at first, and then make adjustments according to outputs.
-    The nested structure of `weird_cases` is `wb` (basename of Excel file) then `sheet` (name of a sheet) then args. See `Examples`.
-    You may specify neither or one or both. If you specify both, `general_cases` is used and `weird_cases` overwrites it only where applicable.
+    The nested structure of \code{weird_cases} is \code{wb} (basename of Excel file) then \code{sheet} (name of a sheet) then args. See \code{Examples}.
+    You may specify neither or one or both. If you specify both, \code{general_cases} is used and \code{weird_cases} overwrites it only where applicable.
 }
 \examples{
 \dontrun{
@@ -36,10 +36,7 @@ folder <- "./excel data/"
 data_ <- extract_excel(folder)
 
 # View all data
-invisible(lapply(names(data_), function(workbook) {
-  lapply(names(data_[[workbook]]), function(sheet)
-    View(data_[[workbook]][[sheet]], title = paste(workbook, sheet, sep = " -- ")))
-})
+view_excel(data_)
 
 # Second try with adjustments where things went wrong
 weird_cases <- list(
