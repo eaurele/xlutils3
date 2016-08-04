@@ -1,13 +1,13 @@
 # xlutils3
 
-The xlutils3 package is a wrapper for the readxl package. It aims to extract all Excel files of a folder at once.
+The `xlutils3` package is a wrapper for the `readxl` package. It aims to extract all Excel files of a folder at once.
 
 ## Installation
 
 You can install:
 
 * the latest development version from Saagie internal Gitlab (requires you have an account):
-*
+
 ```R
 # install.packages("devtools")
 devtools::install_git("ssh://git@gitlab.saagie.tech:42/aurele/xlutils3.git")
@@ -30,4 +30,4 @@ view_excel(data_)
 
 ## Features
 
-* Allows to pass args to readxl::excel_read for all files, or for specific files. (See general_case and weird_cases parameters for extract_excel).
+* Allows to pass args to `readxl::excel_read` for all files, or for specific files. (See `general_case` and `weird_cases` parameters for `extract_excel`).
