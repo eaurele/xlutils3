@@ -1,4 +1,4 @@
-#' A function that extracts all \code{.xls[x]} files in a folder
+#' A Function that Extracts all \code{.xls[x]} Files in a Folder
 #'
 #' Store all data in one list of lists (ie one list of workbooks, each
 #' workbook is a list of sheets, each sheet is a dataframe (or an error message if applicable))
@@ -12,7 +12,7 @@
 #'     It is recommended you try to read the data without these argument at first, and then make adjustments according to outputs.
 #'     The nested structure of \code{weird_cases} is \code{wb} (basename of Excel file) then \code{sheet} (name of a sheet) then args. See \code{Examples}.
 #'     You may specify neither or one or both. If you specify both, \code{general_cases} is used and \code{weird_cases} overwrites it only where applicable.
-#' @return data A list of workbooks, each is a list of sheets as dataframes
+#' @return A list of workbooks, each is a list of sheets as dataframes
 #' @import magrittr
 #' @importFrom stats setNames
 #' @importFrom readxl excel_sheets read_excel
