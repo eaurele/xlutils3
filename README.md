@@ -1,5 +1,8 @@
 # xlutils3
 
+[![Travis-CI Build Status](https://travis-ci.org/eaurele/xlutils3.svg?branch=master)](https://travis-ci.org/eaurele/xlutils3)
+[![Coverage Status](https://img.shields.io/codecov/c/github/eaurele/xlutils3/master.svg)](https://codecov.io/github/eaurele/xlutils3?branch=master)
+
 The `xlutils3` package is a wrapper for the `readxl` package. It aims to extract all Excel files of a folder at once.
 
 ## Installation
