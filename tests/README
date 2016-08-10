@@ -1,0 +1,14 @@
+Data sources:
+
+French airports coordinates:
+https://www.data.gouv.fr/fr/datasets/aeroports-francais-coordonnees-geographiques/
+http://static.data.gouv.fr/00/d9c5dbbe269cee68a13ccbe7e7eda7f3728b39d5f62cd6e9a7ad5272fd5678.xls
+(Renamed to airports.xls)
+
+French museums locations:
+https://www.data.gouv.fr/fr/datasets/liste-et-localisation-des-musees-de-france/
+https://www.data.gouv.fr/s/resources/liste-et-localisation-des-musees-de-france/20160404-110647/Liste_musees_de_France.xls
+
+French artisans businesses:
+https://www.data.gouv.fr/fr/datasets/artisans-nombre-d-entreprises-chiffre-d-affaires-et-valeur-ajoutee/
+https://www.data.gouv.fr/storage/f/2014-01-13T18-09-10/artisans_etalab.xls

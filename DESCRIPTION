@@ -5,7 +5,9 @@ Version: 0.1.0
 Imports:
     magrittr,
     readxl
-Authors@R: c(person("Aurele", "", role = c("aut", "cre"),
+Suggests:
+    testthat
+Authors@R: c(person("Aurele", role = c("aut", "cre"),
 		email = "aurele@saagie.com"))
 Author: Aurele
 Maintainer: Aurele <aurele@saagie.com>

@@ -13,6 +13,15 @@ You can install:
 devtools::install_git("ssh://git@gitlab.saagie.tech:42/aurele/xlutils3.git")
 ```
 
+* or from Github:
+
+```R
+# install.packages("devtools")
+devtools::install_github("eaurele/xlutils3")
+```
+
+* or maybe from CRAN (some day).
+
 ## Usage
 
 ```R
