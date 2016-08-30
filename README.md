@@ -9,7 +9,7 @@ The `xlutils3` package is a wrapper for the `readxl` package. It aims to extract
 
 You can install:
 
-* the latest development version from Saagie internal Gitlab (requires you have an account):
+* the latest development version from Saagie internal Gitlab (requires an account):
 
 ```R
 # install.packages("devtools")
